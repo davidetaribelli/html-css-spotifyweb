@@ -1,3 +1,8 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
 /************
  MOBILE FIRST 
  ************/
@@ -6,7 +11,6 @@
  }
  .boxed-album {
      width: 100%;
-     justify-content: center;
      padding: 1rem;
      gap: 0.5rem;
  }
@@ -65,4 +69,49 @@
 .boxed-footer{
     width: 100%;
     height: 10vh;
+}
+
+/***************
+    MEDIA QUERY 
+****************/
+
+/* TABLET */
+@media  screen and (min-width:639px) {
+    .nav-bar{
+        width: 30%;
+    }
+
+    .boxed-main{
+        width: 70%;
+    }
+    
+}
+
+/* DESKTOP */
+@media screen and (min-width:878px){
+    .nav-bar {
+            width: 20%;
+    }
+
+    .boxed-main {
+        width: 80%;
+    }
+
+    .album {
+        width: calc(100% / 4 - 0.5rem);
+    }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width:1440px) {
+    .nav-bar {
+        width: 15%;
+    }
+    
+    .boxed-main {
+        width: 85%;
+    }
+    .album {
+        width: calc(100% / 6 - 0.5rem);
+    }
 }
