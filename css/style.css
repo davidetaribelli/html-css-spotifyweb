@@ -1,0 +1,68 @@
+/************
+ MOBILE FIRST 
+ ************/
+ main {
+    background-color: #141922;
+ }
+ .boxed-album {
+     width: 100%;
+     justify-content: center;
+     padding: 1rem;
+     gap: 0.5rem;
+ }
+ 
+ .title {
+     width: 100%;
+ }
+/* HEADER */
+
+.nav-bar{
+    z-index: 1;
+    width: 10%;
+    height: calc(100vh - 10vh);
+}
+.upgrade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 10vh;
+    width: 100%;
+}
+
+/* MAIN */
+
+.boxed-main{
+    margin-top: 10vh;
+    overflow-y: scroll;
+    width: 90%;
+    height: calc(100vh - 20vh);
+}
+
+/* link utili */
+.boxed-link{
+    padding: 2rem 3rem;
+    
+}
+
+.link{
+    margin: 0.5em;
+}
+
+.link a{
+    font-size: 0.75rem;
+}
+/* ascoltati di recente */
+
+.album{
+    width: calc(100% / 2 - 0.5rem);  
+}
+
+/* creati per l'utente */
+
+
+/* FOOTER */
+
+.boxed-footer{
+    width: 100%;
+    height: 10vh;
+}

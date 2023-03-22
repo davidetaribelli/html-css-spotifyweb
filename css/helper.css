@@ -16,6 +16,10 @@
 .row        {flex-direction: row;}
 .column     {flex-direction: column;}
 .wrap       {flex-wrap: wrap;}
+.justify-center     {justify-content: center;}
+.justify-start      {justify-content: flex-start;} 
+
+.align-self-start   {align-self: flex-start;}
 
 .overflow-y {overflow-y: scroll;}
 
@@ -59,3 +63,6 @@
 .txt-not  {text-decoration: none;}
 
 .pointer  {cursor: pointer;}
+
+
+
