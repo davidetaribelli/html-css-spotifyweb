@@ -26,45 +26,61 @@
     <!-- MAIN -->
     <main>
         <div class="flex">
-            <div class="nav-bar">
-                <div class="logo pointer">
-                    <img class="first-logo" src="./img/logo-small.svg" alt="logo-small">
-                    <img class="secondary-logo none" src="./img/logo.svg" alt="logo">
+            <!-- navbar -->
+            <div class="nav-bar flex column">
+                <div class="nav-bar-top">
+                    <div class="logo pointer">
+                        <img class="first-logo" src="./img/logo-small.svg" alt="logo-small">
+                        <img class="secondary-logo none" src="./img/logo.svg" alt="logo">
+                    </div>
+                    <div class="home pointer">
+                        <img src="./img/home.svg" alt="home">
+                        <span class="none colorWhite">Home</span>
+                    </div>
+                    <div class="search pointer">
+                        <img src="./img/search.svg" alt="search">
+                        <span class="none colorGrey">Cerca</span>
+                    </div>
+                    <div class="library pointer">
+                        <img src="./img/libreria.svg" alt="library">
+                        <span class="none colorGrey">La tua libreria</span>
+                    </div>
+                    <!-- playlist -->
+                    <div class="playlist none">
+                        <h4 class="colorWhite">PLAYLIST</h4>
+                        <div class="add-playlist colorGrey">
+                            <i class="colorBlack bgColorGrey fa-solid fa-plus"></i>
+                            <span>Crea Playlist</span>
+                            <ul>
+                                <li class="pointer">Nome Playlist</li>
+                                <li class="pointer">Nome Playlist</li>
+                                <li class="pointer">Nome Playlist</li>
+                                <li class="pointer">Nome Playlist</li>
+                                <li class="pointer">Nome Playlist</li>
+                                <li class="pointer">Nome Playlist</li>
+                                <li class="pointer">Nome Playlist</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="home pointer">
-                    <img src="./img/home.svg" alt="home">
-                    <span class="none colorWhite">Home</span>
-                </div>
-                <div class="search pointer">
-                    <img src="./img/search.svg" alt="search">
-                    <span class="none colorGrey">Cerca</span>
-                </div>
-                <div class="library pointer">
-                    <img src="./img/libreria.svg" alt="library">
-                    <span class="none colorGrey">La tua libreria</span>
-                </div>
-                <!-- playlist -->
-                <div class="playlist none">
-                    <h4 class="colorWhite">PLAYLIST</h4>
-                    <div class="add-playlist colorGrey">
-                        <i class="colorBlack bgColorGrey fa-solid fa-plus"></i>
-                        <span>Crea Playlist</span>
-                        <ul>
-                            <li class="pointer">Nome Playlist</li>
-                            <li class="pointer">Nome Playlist</li>
-                            <li class="pointer">Nome Playlist</li>
-                            <li class="pointer">Nome Playlist</li>
-                            <li class="pointer">Nome Playlist</li>
-                            <li class="pointer">Nome Playlist</li>
-                            <li class="pointer">Nome Playlist</li>
-                        </ul>
+                <div class="nav-bar-bottom">
+                    <div class="download marginBottom1rem">
+                        <img src="./img/download.svg" alt="download">
+                        <span class="none colorGrey">Installa App</span>
+                        <hr class="colorGrey none">
+                    </div>
+                    <div class="user">
+                        <div id="circle-user" class="bgColorGrey" >
+                            <img src="./img/profile.svg" alt="profile">
+                        </div>
+                        <span class="none colorWhite font-700">John Doe</span>
                     </div>
                 </div>
             </div>
+            <!-- contenuto della pagina -->
             <div class="boxed-main">
                 <!-- link utili -->
                 <section>
-                    
                     <div class="boxed-link flex wrap justify-center">
                         <div class="link">
                             <a href="#">IN EVIDENZA</a>
