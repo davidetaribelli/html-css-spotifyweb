@@ -19,7 +19,7 @@
     <!-- HEADER -->
     <header>
         <div class="upgrade flex wrap">
-            <button class="button-nav colorWhite">EFFETTUA L'UPGRADE</button>
+            <button class="button-nav colorWhite pointer">EFFETTUA L'UPGRADE</button>
         </div> 
     </header>
     
@@ -27,21 +27,38 @@
     <main>
         <div class="flex">
             <div class="nav-bar">
-                <div class="logo">
+                <div class="logo pointer">
                     <img class="first-logo" src="./img/logo-small.svg" alt="logo-small">
                     <img class="secondary-logo none" src="./img/logo.svg" alt="logo">
                 </div>
-                <div class="home">
+                <div class="home pointer">
                     <img src="./img/home.svg" alt="home">
-                    <span class="none">Home</span>
+                    <span class="none colorWhite">Home</span>
                 </div>
-                <div class="search">
+                <div class="search pointer">
                     <img src="./img/search.svg" alt="search">
                     <span class="none colorGrey">Cerca</span>
                 </div>
-                <div class="library">
+                <div class="library pointer">
                     <img src="./img/libreria.svg" alt="library">
                     <span class="none colorGrey">La tua libreria</span>
+                </div>
+                <!-- playlist -->
+                <div class="playlist none">
+                    <h4 class="colorWhite">PLAYLIST</h4>
+                    <div class="add-playlist colorGrey">
+                        <i class="colorBlack bgColorGrey fa-solid fa-plus"></i>
+                        <span>Crea Playlist</span>
+                        <ul>
+                            <li class="pointer">Nome Playlist</li>
+                            <li class="pointer">Nome Playlist</li>
+                            <li class="pointer">Nome Playlist</li>
+                            <li class="pointer">Nome Playlist</li>
+                            <li class="pointer">Nome Playlist</li>
+                            <li class="pointer">Nome Playlist</li>
+                            <li class="pointer">Nome Playlist</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="boxed-main">
@@ -74,25 +91,37 @@
                     <div class="recently-played">
                         <div class="boxed-album flex wrap ">
                             <div class="title">
-                                <h2>Recently played</h2>
+                                <h2 class="colorWhite">Recently played</h2>
                             </div>
                             <div class="album">
-            
+                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <h4 class="colorWhite center">Heavy Metal</h4>
+                                <h5 class="colorGrey center">Subtitle</h5>
                             </div>
                             <div class="album">
-            
+                                <img src="./img/stranger.jpeg" alt="stranger">
+                                <h4 class="colorWhite center">Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</h4>
+                                <h5 class="colorGrey center">Kyle Dixon & Michael Stein</h5>
                             </div>
                             <div class="album">
-            
+                                <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                                <h4 class="colorWhite center">A quiet place</h4>
+                                <h5 class="colorGrey center">Subtitle</h5>
                             </div>
                             <div class="album">
-            
+                                <img src="./img/split.jpeg" alt="split">
+                                <h4 class="colorWhite center">Split</h4>
+                                <h5 class="colorGrey center">Subtitle</h5>
                             </div>
                             <div class="album">
-            
+                                <img src="./img/cure.jpeg" alt="cure">
+                                <h4 class="colorWhite center">A cure for wellness</h4>
+                                <h5 class="colorGrey center">Subtitle</h5>
                             </div>
                             <div class="album">
-            
+                                <img src="./img/sinister.jpeg" alt="sinister">
+                                <h4 class="colorWhite center">Sinister</h4>
+                                <h5 class="colorGrey center">Subtitle</h5>
                             </div>
                         </div>
                     </div>
@@ -101,22 +130,38 @@
                 <section>
                     <div class="boxed-album flex wrap">
                         <div class="title">
-                            <h2>Creato per John Doe</h2>
-                            <small>Più ascolti, più accurati saranno i suggerimenti.</small>
+                            <h2 class="colorWhite">Creato per John Doe</h2>
+                            <small class="colorGrey">Più ascolti, più accurati saranno i suggerimenti.</small>
                         </div>
-                        <div class="album"></div>
-                        <div class="album"></div>
+                        <div class="album">
+                            <img src="./img/radar.jpeg" alt="relase">
+                            <h4 class="colorWhite center">Release Radar</h4>
+                        </div>
+                        <div class="album">
+                            <img src="./img/mixdaily.jpeg" alt="daily">
+                            <h4 class="colorWhite center">Daily Mix 1</h4>
+                        </div>
                     </div>
                 </section>
                 <!-- artisti più popolari -->
                 <section>
                     <div class="boxed-album flex wrap">
                         <div class="title">
-                            <h2>Artisti più popolari</h2>
-                            <small>Più ascolti, più accurati saranno i suggerimenti.</small>
+                            <h2 class="colorWhite">Artisti più popolari</h2>
+                            <small class="colorGrey">Più ascolti, più accurati saranno i suggerimenti.</small>
                         </div>
-                        <div class="album"></div>
-                        <div class="album"></div>
+                        <div class="album">
+                            <img class="circle" src="./img/youg.jpeg" alt="young">
+                            <h4 class="colorWhite center">Lana Del Rey</h4>
+                        </div>
+                        <div class="album">
+                            <img class="circle" src="./img/einaudi.jpeg" alt="einaudi">
+                            <h4 class="colorWhite center">Ludovico Einaudi</h4>
+                        </div>
+                        <div class="album">
+                            <img class="circle" src="./img/player_left.jpg" alt="player_left">
+                            <h4 class="colorWhite center">Clark Griswold</h4>
+                        </div>
                     </div>
                 </section>
             </div>

@@ -21,6 +21,7 @@
 /* HEADER */
 
 .upgrade{
+    background-color: rgba(8, 11, 18, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -57,6 +58,18 @@
     filter: invert(50%);
 }
 
+.playlist{
+    width: 100%;
+}
+
+.add-playlist i{
+    font-size: 2rem;
+    vertical-align: bottom;
+}
+
+.playlist ul li{
+    list-style: none;
+}
 /* boxed main */
 .boxed-main{
     margin-top: 10vh;
@@ -77,6 +90,12 @@
 
 .link a{
     font-size: 0.75rem;
+    text-decoration: none;
+    color: #7d7f84;
+}
+
+.link:hover a{
+    border-bottom: 3px solid #adff2f;
 }
 /* ascoltati di recente */
 
@@ -84,14 +103,21 @@
     width: calc(100% / 2 - 0.5rem);  
 }
 
+.album img{
+    width: 100%;
+}
 /* creati per l'utente */
 
+.circle{
+    border-radius: 50%;
+}
 
 /* FOOTER */
 
 .boxed-footer{
     width: 100%;
     height: 10vh;
+    z-index: 999;
 }
 
 /***************
@@ -100,9 +126,12 @@
 
 /* TABLET */
 @media  screen and (min-width:639px) {
+
+    /* navbar */
     .nav-bar{
         width: 30%;
         padding: 1rem;
+        line-height: 2rem;
     }
 
     .logo img{
@@ -124,9 +153,11 @@
     .nav-bar div span{
         display: inline-block;
     }
+    .playlist{
+        display: inline-block;
+    }
 
-    
-
+    /* boxed main */
     .boxed-main{
         width: 70%;
     }
