@@ -32,11 +32,18 @@
 }
 
 .button-nav{
-    margin-right: 1rem;
+    margin-right: 2rem;
     border: 1px solid white;
     padding: 0.5rem;
     border-radius: 2em;
     background-color: #141922;
+    transition: 0.2s;
+}
+
+/* animazioni */
+
+.upgrade button:hover{
+    transform: scale(1.2);
 }
 
 /* MAIN */
@@ -54,7 +61,6 @@
 .nav-bar div{
     width: 100%;
 }
-
 
 .search img, .library img, .download img{
     filter: invert(50%);
@@ -94,12 +100,27 @@
     border-radius: 50%;
 }
 
+/* animazioni */
+
+.nav-bar .pointer:hover{
+    color: white;
+    transition: 0.2s;
+}
+
 /* boxed main */
 .boxed-main{
     margin-top: 12vh;
     overflow-y: scroll;
     width: 90%;
     height: calc(100vh - 24vh);
+}
+
+.transbox{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
 }
 
 /* link utili */
@@ -124,6 +145,7 @@
 /* ascoltati di recente */
 
 .album{
+    position: relative;
     width: calc(100% / 2 - 0.5rem);  
 }
 
@@ -134,6 +156,12 @@
 
 .circle{
     border-radius: 50%;
+}
+
+/* animazioni */
+
+.album:hover .transbox{
+    display: block;
 }
 
 /* FOOTER */
@@ -205,6 +233,23 @@
     height: 10%;
     border-radius: 30px;
     margin-left: -0.3em;
+}
+
+/* animazioni */
+
+.option .pointer:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+.play .pointer:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.footer-right .pointer:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 /***************
     MEDIA QUERY 
@@ -324,6 +369,10 @@
 
     .footer-center{
         width: 50%;
+    }
+
+    .play{
+        justify-content: space-evenly;
     }
 
     .footer-right,.footer-left{
