@@ -116,13 +116,14 @@
 }
 
 .transbox{
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    background-color: rgba(0, 0, 0, 0.5);
     display: none;
+    z-index: 1;
+    font-size: 3rem;
+    position: absolute ;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
 }
-
 /* link utili */
 .boxed-link{
     padding: 2rem 3rem;
@@ -146,11 +147,12 @@
 
 .album{
     position: relative;
-    width: calc(100% / 2 - 0.5rem);  
+    width: calc(100% / 2 - 0.5rem);
 }
 
 .album img{
     width: 100%;
+    transition: 0.2s;
 }
 /* creati per l'utente */
 
@@ -160,6 +162,9 @@
 
 /* animazioni */
 
+.album:hover img{
+    filter: brightness(0.5);
+}
 .album:hover .transbox{
     display: block;
 }
