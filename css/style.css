@@ -44,6 +44,7 @@
 
 /* navbar */
 .nav-bar {
+    overflow-y: auto;
     width: 10%;
     height: calc(100vh - 12vh);
     padding: 0.5rem;
@@ -57,7 +58,11 @@
     filter: invert(50%);
 }
 
-.playlist   {width: 100%;}
+.playlist{
+    overflow-y: auto;
+    height: 30%;
+    width: 100%;
+}
 
 .add-playlist i{
     font-size: 2rem;
