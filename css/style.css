@@ -223,6 +223,12 @@
     margin: 0 1em;
 }
 
+.line-point {
+    width: 30%;
+    height: 100%;
+    border-radius: 30px;
+}
+
 .footer-right{
     width: 33%;
     align-items: center;
