@@ -120,7 +120,26 @@
 
 .link a {font-size: 0.75rem;}
 
-.link:hover a   {border-bottom: 3px solid #adff2f;}
+.nav-bar-active {position: relative;}
+
+.nav-bar-active:hover{
+    color: white;
+}
+
+.nav-bar-active:hover::after{
+    background-color: #adff2f;
+}
+
+.nav-bar-active::after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 /* ascoltati di recente */
 
@@ -354,7 +373,7 @@
     .play   {justify-content: space-evenly;}
 
     .footer-right,.footer-left{width: 25%;}
-    
+
     .footer-right i {
         margin-right: 0.5em;
         margin-left: 2em;
