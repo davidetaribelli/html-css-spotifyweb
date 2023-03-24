@@ -36,12 +36,16 @@
 .bgColorDarkBlue        {background-color: #0d2481;}
 .bgColorYellow          {background-color: #ffd830;}
 .bgColorLightGrey       {background-color: lightgray;}
+.bgColorSpotify         {background-color: #141922;}
+
+.bgColorSpotifyOpacity  {background-color: rgba(8, 11, 18, 0.5);}
 
 .colorGrey      {color: grey;}
 .colorBlue      {color: #0061ff;}
 .colorLightGrey {color: lightgray;}
 .colorBlack     {color: black;}
 .colorWhite     {color: white;}
+.colorFontSpotify   {color: #7d7f84;}
 
 .font-700       {font-weight: 700;}
 .font-900       {font-weight: 900;}
